@@ -1,10 +1,11 @@
-Ideas to Implement
+# Future Ideas
 
 V1
-* Input text (copy/paste or type)
-* Decode button to execute
-* AI reads text and returns easily understood/laymans terms summary
+- Summary
+- Action Items
+- Impacted Audience
 
-V2
-* Accept documents
-* Save outputs
+Future
+- Upload files
+- Save outputs
+- Compare policies

@@ -2,4 +2,13 @@ README.md
 
 Thank you for checking out PlainPath! 
 
-This app is meant to be a simple Quality of Life enhancement for professionals that have to deal with laws, policies, standard operating procedures, etc. that do not always make sense. 
+This app is the first tool built for the Federal Employee QoL Toolset! 
+
+# PlainPath
+
+PlainPath is an AI-assisted tool that translates complex policies and procedures into clear, actionable summaries.
+
+## Goals
+- Simplify complex language
+- Extract action items
+- Help people understand next steps
