@@ -14,4 +14,16 @@ print("- Review Policy")
 print("- Determine Applicability")
 
 print("\n--- Impacted Users ---")
-print("- Employees")
+
+impacted = []
+policy_lower = policy.lower()
+
+if "employees" in policy_lower:
+    impacted.append("Employees")
+if "managers" in policy_lower:
+    impacted.append("Managers")
+if "contractors" in policy_lower:
+    impacted.append("Contractors")
+
+for group in impacted:
+    print(f"- {group}")
