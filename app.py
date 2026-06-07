@@ -9,14 +9,17 @@ def find_impacted_users(policy):
     impacted = []
     policy_lower = policy.lower()
 
-    if "employee" in policy_lower:
-        impacted.append("Employees")
-    if "manager" in policy_lower:
-        impacted.append("Managers")
-    if "contractor" in policy_lower:
-        impacted.append("Contractors")
-    if not impacted:
-        impacted.append("Unknown - No specific user groups identified")
+    user_groups = {
+        "employee": "Employees",
+        "manager": "Managers",
+        "contractor": "Contractors"
+    }
+
+    for keyword in user_groups:
+        if keyword in policy_lower:
+            impacted.append(user_groups[keyword])
+        if not impacted:
+            impacted.append("No specific user groups identified")
 
     return impacted
 
@@ -25,12 +28,15 @@ def generate_action_items(policy):
     action_items = []
     policy_lower = policy.lower()
 
-    if "submit" in policy_lower:
-        action_items.append("Submit required documents")
-    if "review" in policy_lower:
-        action_items.append("Review required documents")
-    if "approve" in policy_lower:
-        action_items.append("Obtain necessary approvals")
+    action_keywords = {
+        "submit": "Submit required documentation",
+        "update": "Update existing records",
+        "review": "Review documentation",
+    }
+
+    for keyword in action_keywords:
+        if keyword in policy_lower:
+            action_items.append(action_keywords[keyword])
     if not action_items:
         action_items.append("No specific action items identified")
 
